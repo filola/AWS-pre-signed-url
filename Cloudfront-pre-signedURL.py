@@ -23,10 +23,10 @@
 #     signer.update(message)
 #     return signer.finalize()
 
-# url = 'https://d3rhqdhkabwy6.cloudfront.net'  # CloudFront 상 객체 주소
+# url = 'url 주소'  # CloudFront 상 객체 주소
 # current_time = datetime.datetime.utcnow()
 # expire_date = current_time + datetime.timedelta(minutes=2)  # 만료시간을 정함
-# cloudfront_signer = CloudFrontSigner("APKAT24SLC2FLI2IZSMV", rsa_signer)
+# cloudfront_signer = CloudFrontSigner("KeyId", rsa_signer)
 # # Create a signed url that will be valid until the specfic expiry date
 # # provided using a canned policy.
 # signed_url = cloudfront_signer.generate_presigned_url(url, date_less_than=expire_date)
